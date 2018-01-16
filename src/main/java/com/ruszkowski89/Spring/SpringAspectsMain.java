@@ -10,7 +10,7 @@ public class SpringAspectsMain {
 
         ApplicationContext context = new ClassPathXmlApplicationContext("ApplicationContext.xml");
         ShapeService service = context.getBean("shapeService", ShapeService.class);
-        System.out.println(service.getCircle().getName());
+        service.getCircle();
 
     }
 }
